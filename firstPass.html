@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The best photo submissions are posted here daily">
+    <title>Post Shark</title>
+    <link rel="icon" type="image/webp" href="sharkFin.webp">
+    <style>
+
+        div {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body style="background-color: rgb(220, 229, 240);">
+    <div>
+     <h1 style="text-shadow: 1px 1px 0px lightslategray;" >First Private Password</h1>
+     <hr>
+     <br>
+     <p>You must know the password to access this posting page</p>
+
+     <form action="firstPriv.html" method="get">
+        <div>
+            <label for="password">Password:</label>
+            <input style="border-color: mediumblue;" type="password" id="password" required>
+        </div>
+        <br>
+        <button style="height: 25px; border-radius: 0px;" type="submit" id="submit" disabled>Open Posting Page</button>
+     </form>
+     <br>
+     <hr>
+     <br>
+     <a style="color:mediumblue;" href="index.html">Back to Landing Page</a>
+    </div>
+    
+ <footer>
+    <div>
+     <p style="text-align: center;"><small>© 2026 Ivan Seliskar. All rights reserved.</small></p>
+    </div>
+ </footer>
+
+
+    <script>
+        const passwordInput = document.getElementById('password');
+        const submitButton = document.getElementById('submit');
+
+        passwordInput.addEventListener('input', () => {
+            if (passwordInput.value === 'hammerhead') {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
